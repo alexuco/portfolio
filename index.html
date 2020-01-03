@@ -32,94 +32,7 @@
 
 <body>
 
-	<header class="header text-center">
-		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Alex Martin</a></h1>
-
-			<nav class="navbar navbar-expand-lg navbar-dark">
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div id="navigation" class="collapse navbar-collapse flex-column">
-					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png"
-							alt="image">
-
-						<div class="bio mb-3">Hi, my name is Alex Martin and I'm a UX|UI Software Developer & Digital
-							Project Manager. Welcome to my personal website!</div>
-						<!--//bio-->
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a>
-							</li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-						</ul>
-						<!--//social-list-->
-						<hr>
-					</div>
-					<!--//profile-section-->
-
-					<ul class="navbar-nav flex-column text-left">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw mr-2"></i>About Me<span
-									class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i
-									class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" href="services.html"><i class="fas fa-briefcase fa-fw mr-2"></i>Services &amp; Pricing</a>
-						</li> -->
-						<li class="nav-item">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Resume</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog-home.html"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html"><i
-									class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact</a>
-						</li>
-						<!-- <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-cogs fa-fw mr-2"></i>More Pages
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="project.html">Project Page</a>
-								<a class="dropdown-item" href="blog-home.html">Blog Home 1</a>
-								<a class="dropdown-item" href="blog-home-alt.html">Blog Home 2</a>
-								<a class="dropdown-item" href="blog-post.html">Blog Post</a>
-							</div>
-						</li> -->
-					</ul>
-
-					<div class="my-2">
-						<a class="btn btn-primary" href="contact.html" target="_blank"><i
-								class="fas fa-paper-plane mr-2"></i>Hire Me</a>
-					</div>
-
-
-					<div class="dark-mode-toggle text-center w-100">
-						<hr class="mb-4">
-						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust mr-1"></i>Dark Mode</h4>
-
-						<input class="toggle" id="darkmode" type="checkbox">
-						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
-
-					</div>
-					<!--//dark-mode-toggle-->
-
-				</div>
-			</nav>
-		</div>
-		<!--//force-overflow-->
-	</header>
+	<header class="header text-center"></header>
 
 	<div class="main-wrapper">
 
@@ -273,19 +186,23 @@
 					<div class="col-md-6 mb-5">
 						<div class="card project-card">
 							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/project_1.jpeg" class="card-img" alt="image">
+								<div class="col-lg-4 card-img-holder d-flex">
+									<img src="assets/images/project/project_1.jpeg" class="card-img my-auto"
+										alt="image">
 								</div>
 								<div class="col-lg-8">
 									<div class="card-body">
-										<h5 class="card-title"><a href="project.html" class="theme-link">Research
-												Centre App</a></h5>
-										<p class="card-text">Full stack app for Bioinformatics. UI management tool for
-											'bio-projects'. Deployed on Hospital's own server under high security
-											standars. </p>
-										<p class="card-text"><small class="text-muted">Client: Hospital Vall d'Hebron
-												(Barcelona)</small></p>
+										<h5 class="card-title"><a href="project.html" class="theme-link">Hospital
+												Research App</a></h5>
+										<p class="card-text">Full stack app for hospital BIO-Informatics Dep. UI
+											management tool for
+											'bio-projects' deployed on hospital's own servers. </p>
+
 									</div>
+									<div class="card-footer bg-transparent border-0">
+										<small class="text-muted">Client: Hospital Vall d'Hebron</small>
+									</div>
+
 								</div>
 							</div>
 							<div class="link-mask">
@@ -304,19 +221,20 @@
 					<div class="col-md-6 mb-5">
 						<div class="card project-card">
 							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/project_2.png" class="card-img" alt="image">
+								<div class="col-lg-4 card-img-holder d-flex">
+									<img src="assets/images/project/project_2.png" class="card-img my-auto" alt="image">
 								</div>
 								<div class="col-lg-8">
 									<div class="card-body">
 										<h5 class="card-title"><a href="project.html" class="theme-link">Stop Impunity
 												Child Abuse</a></h5>
-										<p class="card-text">Full digital transformation of NGO with no internet
-											presence at all. Designed & Developed
-											their site and marketing campaigns from scratch.</p>
-										<p class="card-text mt-auto"><small class="text-muted">Client:
-												Simicat</small>
-										</p>
+										<p class="card-text">Full digital transformation of NGO without previous
+											internet
+											presence. Site and marketing campaigns design from scratch.</p>
+
+									</div>
+									<div class="card-footer bg-transparent border-0">
+										<small class="text-muted">Client: NGO Simicat</small>
 									</div>
 								</div>
 							</div>
@@ -336,8 +254,8 @@
 					<div class="col-md-6 mb-5">
 						<div class="card project-card">
 							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/project_3.png" class="card-img" alt="image">
+								<div class="col-lg-4 card-img-holder d-flex">
+									<img src="assets/images/project/project_3.png" class="card-img my-auto" alt="image">
 								</div>
 								<div class="col-lg-8">
 									<div class="card-body">
@@ -345,9 +263,12 @@
 												class="theme-link">SailYourDream</a>
 										</h5>
 										<p class="card-text">As a RYA skipper and diving
-											instructor, we started a travel agency business, ofering
+											instructor, a partner and I started a travel agency business, ofering
 											unrivaled luxury yacht charter.</p>
-										<p class="card-text"><small class="text-muted">Client: sailyourdream</small></p>
+
+									</div>
+									<div class="card-footer bg-transparent border-0">
+										<small class="text-muted">Client: SailYourDream</small>
 									</div>
 								</div>
 							</div>
@@ -367,8 +288,8 @@
 					<div class="col-md-6 mb-5">
 						<div class="card project-card">
 							<div class="row no-gutters">
-								<div class="col-lg-4 card-img-holder">
-									<img src="assets/images/project/project_4.png" class="card-img" alt="image">
+								<div class="col-lg-4 card-img-holder d-flex">
+									<img src="assets/images/project/project_4.png" class="card-img my-auto" alt="image">
 								</div>
 								<div class="col-lg-8">
 									<div class="card-body">
@@ -377,9 +298,14 @@
 										<p class="card-text">Personal Portfolio developed from scratch with JavaScript
 											fetching data through API and populating it towards own html template.
 										</p>
-										<p class="card-text"><small class="text-muted">Client: Alex Martin</small></p>
+
 									</div>
+									<div class="card-footer bg-transparent border-0">
+										<small class="text-muted">Client: Alex Martin</small>
+									</div>
+
 								</div>
+
 							</div>
 							<div class="link-mask">
 								<a class="link-mask-link" href="project.html"></a>
@@ -390,6 +316,7 @@
 								</div>
 							</div>
 							<!--//link-mask-->
+
 						</div>
 						<!--//card-->
 					</div>
@@ -420,6 +347,8 @@
 										Frameworks</a></h5>
 								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
 									commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+									parturient...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+									commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
 									parturient...</p>
 								<p class="mb-0"><a class="more-link" href="blog-post.html">Read more &rarr;</a></p>
 
@@ -444,7 +373,6 @@
 							</div>
 							<div class="card-footer">
 								<small class="text-muted">Published a week ago</small>
-
 							</div>
 						</div>
 						<!--//card-->
@@ -477,21 +405,52 @@
 
 		</section>
 		<!--//latest-blog-section-->
-
-		<footer class="footer text-center py-4">
+		<footer class="footer text-center py-4"></footer>
+		<!-- <footer class="footer text-center py-4">
 			<small class="copyright">Copyright 2019 @lex Martin</small>
-		</footer>
+		</footer> -->
 
 	</div>
 	<!--//main-wrapper-->
 
 	<!-- Javascript -->
+
+
+	<script>
+		async function getComponents() {
+
+			await fetch("./assets/header.html")
+				.then(response => {
+					return response.text()
+				})
+				.then(data => {
+					document.querySelector("header").innerHTML = data;
+				})
+				.catch((error) => {
+					console.log(error)
+				});
+
+			await fetch("./assets/footer.html")
+				.then(response => {
+					return response.text()
+				})
+				.then(data => {
+					document.querySelector("footer").innerHTML = data;
+				})
+				.catch((error) => {
+					console.log(error)
+				});
+		}
+	</script>
+
 	<script src="assets/plugins/jquery-3.4.1.min.js"></script>
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		getComponents();
+	</script>
 	<!-- <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script> -->
 	<!-- <script src="assets/js/testimonials.js"></script> -->
-
 	<!-- Dark Mode -->
 	<script src="assets/plugins/js-cookie.min.js"></script>
 	<script src="assets/js/dark-mode.js"></script>
