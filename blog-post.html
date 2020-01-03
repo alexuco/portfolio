@@ -242,9 +242,39 @@ export  $initHighlight;
 	<!--//main-wrapper-->
 
 	<!-- Javascript -->
+	<script>
+		async function getComponents() {
+
+			await fetch("./assets/header.html")
+				.then(response => {
+					return response.text()
+				})
+				.then(data => {
+					document.querySelector("header").innerHTML = data;
+				})
+				.catch((error) => {
+					console.log(error)
+				});
+
+			await fetch("./assets/footer.html")
+				.then(response => {
+					return response.text()
+				})
+				.then(data => {
+					document.querySelector("footer").innerHTML = data;
+				})
+				.catch((error) => {
+					console.log(error)
+				});
+		}
+	</script>
+
 	<script src="assets/plugins/jquery-3.4.1.min.js"></script>
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		getComponents();
+	</script>
 
 	<!-- Page Specific JS -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
@@ -257,7 +287,5 @@ export  $initHighlight;
 	<script src="assets/js/dark-mode.js"></script>
 
 </body>
-
-<!-- Mirrored from themes.3rdwavemedia.com/devcard/bs4/2.1/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 08:16:20 GMT -->
 
 </html>
